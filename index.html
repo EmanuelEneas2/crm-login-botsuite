@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ingresar | botsuite.46</title>
+<style>
+  :root {
+    --bg: #07110d;
+    --card: #0d1c16;
+    --line: #1c3a2e;
+    --text: #e8f5ee;
+    --muted: #8fb3a1;
+    --green: #2ee59d;
+    --green-dark: #12b574;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+      radial-gradient(900px 500px at 50% -10%, rgba(46,229,157,.14), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 40px 32px 32px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  }
+  .logo {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    display: grid; place-items: center;
+    color: #04130c;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+  .wordmark { font-size: 15px; font-weight: 700; letter-spacing: .5px; color: var(--muted); margin: -6px 0 18px; }
+  .wordmark span { color: var(--green); }
+  h1 { font-size: 24px; letter-spacing: -.3px; margin-bottom: 8px; }
+  .brand { color: var(--green); }
+  p.sub { color: var(--muted); font-size: 15px; line-height: 1.5; margin-bottom: 28px; }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: var(--green);
+    color: #04130c;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform .12s ease, background .12s ease;
+  }
+  .btn:hover { background: #55f0b2; transform: translateY(-1px); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .help { margin-top: 22px; font-size: 13px; color: var(--muted); }
+  .help a { color: var(--green); text-decoration: none; }
+  .help a:hover { text-decoration: underline; }
+  footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 12px; color: #5f8472; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo" aria-hidden="true">46</div>
+    <div class="wordmark">botsuite<span>.46</span></div>
+    <h1>Ingresá a tu <span class="brand">CRM</span></h1>
+    <p class="sub">Todas tus conversaciones de WhatsApp e Instagram, en un solo panel.</p>
+
+    <!-- Cambiá esta URL por la del login de tu CRM si hace falta -->
+    <a class="btn" id="login" href="https://app.builderbot.cloud">Ingresar</a>
+
+    <p class="help">¿Problemas para entrar? Escribinos por <a href="https://wa.me/5491151215132">WhatsApp</a>.</p>
+    <footer>botsuite.46</footer>
+  </main>
+</body>
+</html>
